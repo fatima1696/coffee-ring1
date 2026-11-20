@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "remotion studio",
-    "render": "remotion render src/index.ts CoffeeRing out/coffee-ring.mp4",
+    "render": "remotion render index.ts CoffeeRing out/coffee-ring.mp4",
     "render:scenes": "node render-scenes.mjs"
   },
   "dependencies": {

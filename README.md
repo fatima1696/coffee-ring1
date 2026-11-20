@@ -19,14 +19,14 @@ npm run render:scenes  # nine separate clips, no captions -> out/scenes/Scene1-R
 
 ## Where things are
 
-- `src/timeline.ts`: the nine beats (seconds + narration line). Change a duration here and the captions follow.
-- `src/scenes/Scene1Ring.tsx` ... `Scene9Cafe.tsx`: one file per scene. The camera moves are the `keys` array at the top of each file (`s` = zoom, `fx`/`fy` = where the camera looks, `r` = roll).
-- `src/Captions.tsx`: 2-3 words at a time at the top, one bold word, lower third left empty.
-- `src/palette.ts`: the colors (cream, coffee brown, one teal accent).
+- `timeline.ts`: the nine beats (seconds + narration line). Change a duration here and the captions follow.
+- `Scene1Ring.tsx` ... `Scene9Cafe.tsx`: one file per scene. The camera moves are the `keys` array at the top of each file (`s` = zoom, `fx`/`fy` = where the camera looks, `r` = roll).
+- `Captions.tsx`: 2-3 words at a time at the top, one bold word, lower third left empty.
+- `palette.ts`: the colors (cream, coffee brown, one teal accent).
 
 Labels appear only in scene 4 (PINNED EDGE) and scene 5 (CAPILLARY FLOW).
 Each scene is also registered on its own under the "Scenes" folder in Studio.
 
 ## Voiceover
 
-Put the narration file in `public/` and add `<Audio src={staticFile('voiceover.mp3')} />` (from `@remotion/media`) inside `src/Video.tsx`.
+Put the narration file in `public/` and add `<Audio src={staticFile('voiceover.mp3')} />` (from `@remotion/media`) inside `Video.tsx`.

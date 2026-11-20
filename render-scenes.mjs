@@ -19,7 +19,7 @@ mkdirSync('out/scenes', {recursive: true});
 
 for (const id of scenes) {
   console.log(`\nRendering ${id} ...`);
-  const res = spawnSync('npx', ['remotion', 'render', 'src/index.ts', id, `out/scenes/${id}.mp4`], {
+  const res = spawnSync('npx', ['remotion', 'render', 'index.ts', id, `out/scenes/${id}.mp4`], {
     stdio: 'inherit',
     shell: true,
   });
